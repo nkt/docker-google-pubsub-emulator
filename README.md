@@ -14,7 +14,7 @@ _Only use this image in development, do not use this in production!_
 
    services:
      pubsub:
-       image: adhawk/google-pubsub-emulator
+       image: ghcr.io/nkt/google-pubsub-emulator
        ports:
          - 8085:8085
    ```
@@ -22,7 +22,7 @@ _Only use this image in development, do not use this in production!_
 2. Plain `docker` command:
 
    ```sh
-   docker run -p 8085:8085 adhawk/google-pubsub-emulator
+   docker run -p 8085:8085 ghcr.io/nkt/google-pubsub-emulator
    ```
 
 3. Make sure to set these environment variables in your app that requires the
